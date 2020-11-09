@@ -5,7 +5,7 @@ body{
   background-repeat: no-repeat;
 }
 nav{
-  ;
+  float: right;
 }
 .grid-container {
     display: grid;
@@ -33,7 +33,14 @@ nav{
 text-align: center;
 
 }
+.kontaktKnap{
+  font-size: 24px;
+  background-color: #DF9521;
+  border:none;
+  border-radius: 35px;
+  padding: 5px 30px;
 
+}
   
  
 

@@ -1,0 +1,47 @@
+
+body{
+  background-image: url(/assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  ;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Top Top Top Top"
+      "Main Main Main Main"
+      
+    
+  }
+  .herotext {
+    font-size: 120px;
+}
+.undertext{
+    font-size: 24px;
+    
+}
+
+  .Top { grid-area: Top; 
+    
+}
+  .Main { grid-area: Main; 
+text-align: center;
+
+}
+
+  
+ 
+
+
+
+.Footer { grid-area: Footer; }
+
+
+
+
+  

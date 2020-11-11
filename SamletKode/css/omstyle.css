@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+:root {
+  --blue1: #4e84a6;
+  --blue2: #60a4bf;
+  --blue3: #a3c9d9;
+  --blue4: #c2e0f2;
+  --yellow: #df9521;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #F4FCFE;
+}
+.Top{
+  width: 30%;
+  height: 50px;
+}
+.herotext{
+  font-family: 'Lato bold', 'sans-serif';
+  display: flex;
+  position: absolute;
+  font-size: 70px;
+  top: 15%;
+  left: 20%;
+  text-transform: uppercase;
+}
+.blue{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  color: blue;
+}
+.text1{
+  font-family: 'Lato Bold', 'sans-serif';
+  display: flex;
+  position: absolute;
+  margin: 20;
+  padding: 20;
+  font-size: 20px;
+  top: 45%;
+  left: 20%;
+}
+.flowersmall{
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+.bigflower{
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  opacity: 0.2;
+}
+.flower2{
+  position: absolute;
+  Right: 2%;
+  top: 80%;
+}
+.text2{
+  position: absolute;
+  margin-top: 5%;
+  font-family: 'Lato bold', 'sans-serif';
+  font-size: 20px;
+  top: 70%;
+  right: 28%;
+}
+.overskrift{
+  position: absolute;
+  margin-top: 5%;
+  font-family: 'Lato', 'sans-serif';
+  font-size: 80px;
+  top:90%;
+  left: 20%;
+  color: #4EABCD;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+.overskrift-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.floweropacity{
+  position: absolute;
+  Left: 2%;
+  top: 90%;
+}
+.text3{
+  position: absolute;
+  font-family: 'Lato bold ', 'sans-serif';
+  font-size: 20px;
+  top: 130%;
+  left: 20%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+.text3-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.stem{
+  position: absolute;
+  Right: 10%;
+  top: 115%;
+  display: none;
+}
+.text4{
+  position: absolute;
+  font-family: 'Lato bold', 'sans-serif';
+  font-size: 19px;
+  top: 150%;
+  right: 20%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+.text4-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.flowerupside{
+  position: absolute;
+  Right: 10%;
+  top: 170%;
+}
+.text5{
+  position: absolute;
+  font-family: 'Lato bold', 'sans-serif';
+  font-size: 20px;
+  top: 180%;
+  left: 20%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+.text5-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.flowerlarge{
+  position: absolute;
+  Right: 10%;
+  top: 170%;
+}
+/* --------------MENU-------------- */
+
+#burgerButton {
+  background: url(../assets/hamburger.png) no-repeat;
+  display: block;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  float: right;
+  margin: 40px;
+}
+.menubar {
+  float: right;
+   padding: 0%;
+   z-index: 1000;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 40px;
+  padding: 0;
+  width: 70%;
+}
+
+li a {
+  display: block;
+  color: var(--blue4);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: var(--blue1);
+}
+
+/* Change the link color on hover */
+li a:hover {
+  width: 90%;
+  background-color: var(--blue2);
+  color: var(--blue1);
+}
+
+@media only screen and (max-width: 600px) {
+  #burgerButton {
+    position: relative;
+
+    z-index: 1000;
+  }
+  ul {
+    z-index: 800;
+    margin-top: 40px;
+    padding: 0;
+    width: 80px;
+  }
+  li a {
+    display: block;
+    color: var(--blue4);
+
+    text-decoration: none;
+    font-size: 16px;
+    background-color: var(--blue1);
+  }
+  li a:hover {
+    width: 79%;
+  }
+  .herotext{
+    
+    font-size: 40px;
+    top: 15%;
+    left: 20%;
+    text-transform: uppercase;
+  }
+}

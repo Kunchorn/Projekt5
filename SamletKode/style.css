@@ -1,0 +1,266 @@
+:root {
+    --blue1: #4e84a6;
+    --blue2: #60a4bf;
+    --blue3: #a3c9d9;
+    --blue4: #c2e0f2;
+    --yellow: #df9521;
+  }
+html {
+    background-image: linear-gradient(#F4FCFE 100%, #ffffff 100%);
+}
+
+body {
+    font-family: "lato";
+    max-width: 1000px;
+    width: 1000px;
+    margin: auto;
+}
+
+/* headers start */
+
+.head1,
+.head2 {
+    font-weight: 600;
+    line-height: 1.3;
+    border: 20px;
+    font-size: 35px;
+}
+
+.head2 {
+    color: #fbb03b;
+}
+
+h1 {
+    /* Om støtten */
+    width: 240px;
+    padding: 20px 0px 30px 10px;
+}
+
+h2 {
+    /* Hvem kan få støtte */
+    width: 185px;
+    padding-left: 70px;
+}
+
+h3 {
+    /* Tilskuddets størrelse */
+    width: 240px;
+    padding-left: 500px;
+    padding-top: 100px;
+}
+
+h4 {
+    /* Hvad kan jeg søge støtte til */
+    width: 185px;
+    padding-left: 70px;
+}
+
+h5 {
+    /* Hvordan søger jeg støtte */
+    width: 240px;
+    padding: 20px 0px 0px 300px;
+}
+
+/* headers end */
+
+
+/* brødtekst start */
+
+.bodytext {
+    /* alt brødtekst */
+    font-size: 14px;
+    line-height: 1.6;
+    border: 20px;
+    padding: 0px 10px 40px 0px;
+}
+
+.toptext {
+    width: 700px;
+    padding-left: 70px;
+}
+
+.righttext {
+    width: 500px;
+    padding-left: 500px;
+}
+
+.lefttext {
+    width: 475px;
+    padding-left: 70px;
+}
+
+.bottomtext {
+    width: 500px;
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .bodytext {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+}
+
+/* brødtekst end */
+
+
+/*image*/
+.img0 {
+    position: absolute;
+    left: 100px;
+    top: 2000px;
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+}
+
+.img1 {
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    transform: rotate(100deg)
+}
+
+.img2 {
+    position: absolute;
+    left: 200px;
+    top: 900px;
+    z-index: -1;
+    width: 140px;
+    height: 140px;
+    transform: rotate(50deg);
+}
+
+.img3 {
+    position: absolute;
+    left: -20px;
+    top: 700px;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+}
+
+.img4 {
+    position: absolute;
+    left: 700px;
+    top: 1600px;
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+}
+
+.img5 {
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    transform: rotate(40deg)
+}
+
+/* --------------MENU-------------- */
+.Menu {
+    float: right;
+  }
+  #burgerButton {
+    background: url(../assets/hamburger.png) no-repeat;
+    display: block;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    float: right;
+    margin-top: 40px;
+  }
+  .menubar {
+    padding-top: 20%;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 40px;
+    padding: 0;
+    width: 70%;
+  }
+  
+  li a {
+    display: block;
+    color: var(--blue4);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: var(--blue1);
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    width: 90%;
+    background-color: var(--blue2);
+    color: var(--blue1);
+  }
+
+@media only screen and (max-width: 800px) {
+    .img0 {
+        left: 320px;
+        top: 1940px;
+        width: 150px;
+        height: 150px;
+        opacity: 0.5;
+    }
+
+    .img1 {
+        left: 400px;
+        top: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .img2 {
+        left: 300px;
+        top: 1100px;
+        width: 140px;
+        height: 140px;
+        opacity: 0.5;
+    }
+
+    .img3 {
+        left: 20px;
+        top: 700px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .img4 {
+        left: 370px;
+        top: 1500px;
+        width: 150px;
+        height: 150px;
+        opacity: 0.5;
+        transform: rotate(20deg)
+    }
+
+    .img5 {
+        left: 500px;
+        top: 150px;
+        width: 80px;
+        height: 80px;
+    }
+}

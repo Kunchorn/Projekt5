@@ -1,0 +1,176 @@
+:root {
+  --blue1: #4e84a6;
+  --blue2: #60a4bf;
+  --blue3: #a3c9d9;
+  --blue4: #c2e0f2;
+  --yellow: #df9521;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Lato;
+  background-image: url(/assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr 0.6fr;
+  grid-template-rows: 0.5fr 0.8fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "LOGO LOGO LOGO Menu"
+    "main main main Menu"
+    "main main main .";
+}
+
+.LOGO {
+  grid-area: LOGO;
+}
+
+/* --------------MENU-------------- */
+.Menu {
+  grid-area: Menu;
+}
+#burgerButton {
+  background: url(../assets/hamburger.png) no-repeat;
+  display: block;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  float: right;
+  margin: 40px;
+}
+.menubar {
+  padding-top: 30%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 40px;
+  padding: 0;
+  width: 70%;
+}
+
+li a {
+  display: block;
+  color: var(--blue4);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: var(--blue1);
+}
+
+/* Change the link color on hover */
+li a:hover {
+  width: 90%;
+  background-color: var(--blue2);
+  color: var(--blue1);
+}
+
+/* ----------------MAIN------------ */
+.main {
+  grid-area: main;
+
+  margin-left: 20%;
+  margin-top: 5%;
+  text-align: center;
+}
+.herotext {
+  font-size: 100px;
+  color: var(--blue1);
+}
+
+.undertext {
+  font-size: 24px;
+  color: var(--blue1);
+}
+#kontaktKnap {
+  font-size: 24px;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 35px;
+  padding: 8px 35px;
+}
+
+/* -----------Breakpoints--------- */
+
+@media only screen and (max-width: 970px) {
+  .herotext {
+    font-size: 70px;
+  }
+  @media only screen and (max-width: 600px) {
+    #burgerButton {
+      position: relative;
+
+      z-index: 1000;
+    }
+    ul {
+      z-index: 800;
+      margin-top: 40px;
+      padding: 0;
+      width: 80px;
+    }
+    li a {
+      display: block;
+      color: var(--blue4);
+
+      text-decoration: none;
+      font-size: 16px;
+      background-color: var(--blue1);
+    }
+    li a:hover {
+      width: 79%;
+    }
+    .main {
+      margin-top: 15%;
+      margin-left: 33%;
+    }
+    .herotext {
+      font-size: 30px;
+    }
+    .undertext {
+      font-size: 12px;
+      color: var(--blue1);
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #burgerButton {
+    position: sticky;
+    margin: 5px;
+    width: 30px;
+  }
+
+  ul {
+    z-index: 800;
+    margin-top: 40px;
+    padding: 0;
+    width: 80px;
+  }
+  #kontaktKnap {
+    height: 28px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 24px;
+    padding: 2px 35px;
+  }
+  li a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+  li a:hover {
+    width: 75%;
+  }
+  .main {
+    margin-top: 15%;
+    margin-left: 30%;
+  }
+  .herotext {
+    font-size: 30px;
+  }
+}

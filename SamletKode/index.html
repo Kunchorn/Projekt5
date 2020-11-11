@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foreningen til støtte af sygdomsramte erhvervsaktive borgere</title>
+    <link rel="stylesheet" href="/css/frontpage.css" />
+    <script src="js/main.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/Flower.png" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- LOGO -->
+      <div class="LOGO">
+        <a class="sygelogo" href="/index.html"
+          ><img src="assets/logo.png" alt="logo"
+        /></a>
+      </div>
+
+      <!-- MENU -->
+      <div class="Menu">
+        <button id="burgerButton" onclick="toggleFunction()"></button>
+
+        <nav class="menubar">
+          <ul id="menulist">
+            <li><a href="/index.html">Forside</a></li>
+            <li><a href="/om os.html">Om Os</a></li>
+            <li><a href="/omstõtten.html">Om Støtten</a></li>
+            <li><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- MAIN -->
+      <div class="main">
+        <span class="herotext">Velkommen Til</span>
+        <p class="undertext">
+          Få støtte til at komme væk fra en uudholdende hverdag.<br />Og vend
+          tilbage med ny energi
+        </p>
+        <br />
+        <!-- Kontakt -->
+        <button id="kontaktKnap" onclick="kontaktFormular()">Kontakt Os</button>
+        <p id="number"></p>
+      </div>
+    </div>
+  </body>
+</html>
